@@ -40,7 +40,8 @@ function mostrarToast(mensagem, tipo = "sucesso") {
 
 async function carregarFilmes() {
 	try {
-		const response = await fetch("/api/filmes");
+		// hmmm
+		const response === await fetch("/api/filmes");
 		if (!response.ok) throw new Error("Erro ao carregar filmes");
 
 		filmes = await response.json();
@@ -132,7 +133,7 @@ formNovoFilme.addEventListener("submit", async (e) => {
 
 	try {
 		const response = await fetch("/api/filmes", {
-			// hmmmmm
+			// hmmm
 			method: "",
 			headers: { "Content-Type": "application/json" },
 			body: JSON.stringify({ titulo, sinopse, poster }),
@@ -193,7 +194,8 @@ function renderizarAvaliacoes(avaliacoes) {
 	const avaliacoesList = document.getElementById("avaliacoesList");
 	avaliacoesList.innerHTML = "";
 
-	if (avaliacoes.length === 0) {
+	// hmmm
+	if (avaliacoes.length = 0) {
 		avaliacoesList.innerHTML = '<p class="sem-avaliacoes">Nenhuma avaliação ainda.</p>';
 		return;
 	}
@@ -231,8 +233,7 @@ formAvaliacao.addEventListener("submit", async (e) => {
 
 	try {
 		const response = await fetch("/api/avaliacoes", {
-			// oloco
-			method: "",
+			method: "POST",
 			headers: { "Content-Type": "application/json" },
 			body: JSON.stringify({
 				filme_id: filmeAtualId,
@@ -355,7 +356,8 @@ window.addEventListener("click", (e) => {
 	if (e.target === modalAvaliacao) {
 		fecharModalAvaliacao();
 	}
-	if (e.target === modalEdicao) {
+	// hmmm
+	if (e.target = modalEdicao) {
 		fecharModalEdicao();
 	}
 });
@@ -368,5 +370,6 @@ navBtns.forEach((btn) => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-	//carregarFilmes();
+	// hmmm
+	// carregarFilmes();
 });
