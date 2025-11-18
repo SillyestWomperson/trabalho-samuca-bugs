@@ -1,0 +1,48 @@
+BUGS PARA ENCONTRAR
+===================
+
+---
+
+BUG 1 - index.html linha 105
+Arquivo: public/index.html
+Tipo: Tag HTML nao fechada
+Descricao: Falta fechar a tag </div> da secao de formulario
+
+---
+
+BUG 2 - index.js linha 45
+Arquivo: public/index.js
+Tipo: Operador errado
+Descricao: Uso de === ao inves de = na atribuicao da variavel response
+
+---
+
+BUG 3 - index.js linha 138
+Arquivo: public/index.js
+Tipo: String vazia
+Descricao: O metodo HTTP esta vazio, deveria ser "POST"
+
+---
+
+BUG 4 - index.js linha 199
+Arquivo: public/index.js
+Tipo: Operador de comparacao errado
+Descricao: Uso de = ao inves de === na comparacao de avaliacoes.length
+
+---
+
+BUG 5 - index.js linha 361
+Arquivo: public/index.js
+Tipo: Operador de atribuicao ao inves de comparacao
+Descricao: Uso de = ao inves de === na comparacao do event target
+
+---
+
+BUG 6 - index.js linha 375
+Arquivo: public/index.js
+Tipo: Codigo comentado
+Descricao: A funcao carregarFilmes() esta comentada e nao sera executada
+
+---
+
+Total de bugs: 6
